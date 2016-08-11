@@ -7,7 +7,7 @@ FILE=benchmark.tgz
 URL=http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/${FILE}
 echo "Downloading SBD data..."
 
-wget $URL -O ${FILE}
+aria2c -x16 -j16 $URL # -O ${FILE}
  
 echo "Unzipping..."
 
